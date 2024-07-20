@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F3EF;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 1.25rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.header:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.link:hover {
+    color: #007BFF;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    background-color: #6699CC;
+    margin: 1.5rem 0;
+    height: 48rem;
+    border-radius: 0.5rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #F3E5F5;
+    margin: 1rem 0.6rem;
+    width: 27rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    justify-content: space-around;
+    transition: box-shadow 0.3s ease;
+}
+
+.article:hover {
+    background-color: #F5F5F5;
+    box-shadow: 0rem 0.1rem 0.4rem #E8E8E8; /* Gris muy claro para una sombra más suave */
+    color: #0056b3; /* Azul oscuro para el texto */
+}
+
+.image {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.imageTrajineras {
+    height: 70%;
+    width: 80%;
+}
+
+p {
+    margin: 0 1.3rem;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #333333;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    margin: 0.9rem 0;
+    padding: 1.5rem;
+    font-size: 0.9em;
+    color: #666666;
+    transition: box-shadow 0.3s ease;
+}
+
+.footer:hover {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footerRights {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        height: auto;
+    }
+    
+    .section {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    
+    .article {
+        width: auto;
+    }
+    
+    .image {
+        width: 100%;
+    }
+}

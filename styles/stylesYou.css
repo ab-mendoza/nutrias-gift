@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F3EF;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.header:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.link:hover {
+    color: #007BFF;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: box-shadow 0.5s ease;
+}
+
+.container:hover {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555555;
+    text-align: justify;
+}
+
+.song {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666666;
+    transition: box-shadow 0.3s ease;
+}
+
+.footer:hover {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

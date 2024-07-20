@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F3EF;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    /*Se establece un color de fondo, tipo de letra y color de letra para todo el documento
+    Se resetea el padding y margin del documento*/
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    /*Se establce unn color de fondo para el header, se da un espacio dentor del elemento (padding),
+    se centra el texto y se da una animación. Parece que el text-align está de más.*/
+    transition: box-shadow 0.3s ease;
+}
+
+.header:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*Se usa display: flex para poder utilizar justfiy-content:center, lo que
+permite centrar las anclas que se encuentran en el menu, que a su vez están envueltos por
+el header. Se da un espacio entre elementos de 20px (gap)*/
+
+.link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+/*Se especifica que el texto de las enclas no debe de tener ninguna decoración. Se establece el color
+de las letras, su peso (bold) y el tipo de letra. */
+
+.link:hover {
+    color: #007BFF;
+}
+
+/*Al pasar el mouse por encima se cambia el color de las letras*/
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: box-shadow 0.5s ease;
+}
+
+/*Se da un ancho máximo para el elemento, el cual es menor que el tamaño del body. 
+Podemos diferenciar un elemento de otro por el color de fondo, container tiene fondo blanco, 
+mientras que body tiene un color durazno. Se establce margin: 0 auto; para centrar el elemento horizontalmente.
+Esta propiedad establece el margen superior e inferior en 0 y los márgenes izquierdo y derecho se calculan 
+automáticamente para que el elemento esté centrado horizontalmente dentro de su contenedor, siempre y cuando 
+el ancho del elemento sea menor que el ancho del contenedor. Se da una animación con box-shadow, se redondean los bordes
+y se da un argen superior para separar el contendedor del header.*/
+
+.container:hover {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: justify;
+}
+
+/*Justifica el texto. No incluye el borde.*/
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-top: 1rem;
+}
+
+/*Se cambia el tipo de letra, el tamaño de la fuente, el color y se da un
+margen inferior para separar el titulo del texto.*/
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+/*line-height establece la altura entre líneas de texto. En este caso, como 1.6 veces
+el tamaño de la fuente actual, mejorando la legibilidad y el espacio 
+visual del texto.*/
+
+.image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/*Se establcece el anchi de la imagen, el cual debe de ocupar un
+100% del contenedor padre. Se redondean los bordes y se da un margen superior
+para separar la imagen del texto.*/
+
+.footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666666;
+    transition: box-shadow 0.3s ease;
+}
+
+.footer:hover {
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Se da un color blanco de fondo, se centra el texo, se da un padding
+de 20px para dar espacio dentro del elemento. Se establcece un color para la letra
+y se da una animación con box-shadow.*/
